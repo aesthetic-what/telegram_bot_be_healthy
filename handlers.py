@@ -5,7 +5,7 @@ from aiogram.filters import CommandStart
 from aiogram.fsm.state import State, StatesGroup
 from aiogram.fsm.context import FSMContext
 
-import app.keyboard as kb
+import keyboard as kb
 
 router = Router()
 # user_choices = {}  # Словарь для хранения выборов пользователей
