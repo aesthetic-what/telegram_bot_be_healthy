@@ -4,10 +4,10 @@ import asyncio
 import requests
 from handlers import router
 
-TOKEN = Bot(token='7530313667:AAFQz08Gnrv-Mqty2IA1cT1COzXqgYo84I8')
+TOKEN = Bot(token='7530313667:AAG-kqhEUNv0qi3N5s8ARA8Gn1XpxyVpOwU')
 
 async def main():
-    bot = Bot(token='7530313667:AAFQz08Gnrv-Mqty2IA1cT1COzXqgYo84I8')
+    bot = Bot(token='7530313667:AAG-kqhEUNv0qi3N5s8ARA8Gn1XpxyVpOwU')
     dp = Dispatcher()
     dp.include_router(router)
     await dp.start_polling(bot)
@@ -34,7 +34,7 @@ def webhook():
 
 if __name__ == '__main__':
     try:
-        asyncio.run(main())
         app.run(host='0.0.0.0', port=80)
+        asyncio.run(main())
     except KeyboardInterrupt:
         print("bot deactivated")
