@@ -6,7 +6,7 @@ from handlers import router
 
 
 async def main():
-    bot = Bot(token='7317856959:AAGRW7wgzy-_IAZYAQrUA57LVhujcrCnUv8')
+    bot = Bot(token='7317856959:AAEm6qiBoD0MwBHDMV61LJf3bI0-JwvpcaY')
     dp = Dispatcher()
     dp.include_router(router)
     await dp.start_polling(bot)
@@ -22,6 +22,6 @@ def hello_world():
 if __name__ == '__main__':
     try:
         asyncio.run(main())
-        app.run(debug=True, port=0000)
+        app.run(debug=True, port=5000)
     except KeyboardInterrupt:
         print("bot deactivated")
