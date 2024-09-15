@@ -2,7 +2,7 @@ import asyncio
 from flask import Flask
 from aiogram import Bot, Dispatcher
 
-from app.handlers import router
+from handlers import router
 
 
 async def main():
