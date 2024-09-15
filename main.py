@@ -7,6 +7,7 @@ from handlers import router
 TOKEN = Bot(token='7530313667:AAG-kqhEUNv0qi3N5s8ARA8Gn1XpxyVpOwU')
 
 async def main():
+    app = Flask(__name__)
     bot = Bot(token='7530313667:AAG-kqhEUNv0qi3N5s8ARA8Gn1XpxyVpOwU')
     dp = Dispatcher()
     dp.include_router(router)
@@ -34,7 +35,7 @@ def webhook():
 
 if __name__ == '__main__':
     try:
-        app.run(host='0.0.0.0', port=80)
+        import asyncio
         asyncio.run(main())
     except KeyboardInterrupt:
         print("bot deactivated")
