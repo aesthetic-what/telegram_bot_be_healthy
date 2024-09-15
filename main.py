@@ -11,7 +11,7 @@ async def main():
     bot = Bot(token='7530313667:AAG-kqhEUNv0qi3N5s8ARA8Gn1XpxyVpOwU')
     dp = Dispatcher()
     dp.include_router(router)
-    app.run(host='149.154.167.40', port=443)
+    app.run(host='0.0.0.0', port=443)
     await dp.start_polling(bot) 
 
 
