@@ -1,7 +1,7 @@
 from flask import Flask, request
 from aiogram import Bot, Dispatcher
 import requests
-from app.handlers import router
+from handlers import router
 
 TOKEN = Bot(token='7530313667:AAFQz08Gnrv-Mqty2IA1cT1COzXqgYo84I8')
 
