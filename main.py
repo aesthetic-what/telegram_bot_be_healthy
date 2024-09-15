@@ -22,6 +22,6 @@ def hello_world():
 if __name__ == '__main__':
     try:
         asyncio.run(main())
-        app.run(debug=True, port=5000)
+        app.run(debug=True, port=0000)
     except KeyboardInterrupt:
         print("bot deactivated")
