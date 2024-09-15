@@ -1,4 +1,5 @@
-from flask import Flask, request
+from fastapi import FastAPI, Request
+import uvicorn
 from aiogram import Bot, Dispatcher
 import asyncio
 import requests
@@ -7,11 +8,11 @@ from handlers import router
 TOKEN = Bot(token='7530313667:AAG-kqhEUNv0qi3N5s8ARA8Gn1XpxyVpOwU')
 
 async def main():
-    app = Flask(__name__)
+    app = 
     bot = Bot(token='7530313667:AAG-kqhEUNv0qi3N5s8ARA8Gn1XpxyVpOwU')
     dp = Dispatcher()
     dp.include_router(router)
-    app.run(host='0.0.0.0', port=443)
+    uvicorn.run(app, host="0.0.0.0", port=8000)
     await dp.start_polling(bot) 
 
 
