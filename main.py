@@ -8,13 +8,13 @@ from handlers import router
 TOKEN = Bot(token='7530313667:AAG-kqhEUNv0qi3N5s8ARA8Gn1XpxyVpOwU')
 
 async def main():
-    app = FastAPI()
     bot = Bot(token='7530313667:AAG-kqhEUNv0qi3N5s8ARA8Gn1XpxyVpOwU')
     dp = Dispatcher()
     dp.include_router(router)
     uvicorn.run(app, host="0.0.0.0", port=8000)
     await dp.start_polling(bot) 
 
+app = FastAPI()
 
 # Функция для обработки webhook запросов
 @app.post("/webhook")
