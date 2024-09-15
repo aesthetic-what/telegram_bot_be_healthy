@@ -1,4 +1,5 @@
 aiogram
 asyncio
-flask
+fastapi
 requests
+uvicorn
