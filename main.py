@@ -1,9 +1,11 @@
-from fastapi import FastAPI, Request
 import uvicorn
-from aiogram import Bot, Dispatcher
 import asyncio
 import requests
 from handlers import router
+from aiogram.utils import executor
+from aiogram.types import messages
+from aiogram import Bot, Dispatcher, types
+from fastapi import FastAPI, Request
 
 TOKEN = Bot(token='7530313667:AAG-kqhEUNv0qi3N5s8ARA8Gn1XpxyVpOwU')
 
