@@ -1,5 +1,6 @@
 from flask import Flask, request
 from aiogram import Bot, Dispatcher
+import asyncio
 import requests
 from handlers import router
 
