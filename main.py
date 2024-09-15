@@ -11,8 +11,8 @@ async def main():
     bot = Bot(token='7530313667:AAG-kqhEUNv0qi3N5s8ARA8Gn1XpxyVpOwU')
     dp = Dispatcher()
     dp.include_router(router)
-    await dp.start_polling(bot)
     app.run(host='149.154.167.40', port=443)
+    await dp.start_polling(bot) 
 
 
 def webhook():
