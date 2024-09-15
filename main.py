@@ -34,5 +34,6 @@ def webhook():
 if __name__ == '__main__':
     try:
         app.run(host='0.0.0.0', port=80)
+        asyncio.run(main())
     except KeyboardInterrupt:
         print("bot deactivated")
